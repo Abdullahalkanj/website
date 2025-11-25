@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Lord Of The Ring</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Credit Card Details</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="icon" type="image/x-icon" href="../img/the-one-ring.jpg">
+</head>
+<body>
+    <header class="site-header">
+        <div class = "content">
+            <h1>The Lord of the Rings</h1>
+            <p class="slogan">Explore the wonders of Middle-earth</p>
+            <h2>The Epic Fantasy Adventure</h2>
+        </div>
+    </header>
+    <nav class="navigation-bar">
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="column3.html">Information</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="post" class="credit-card-form">
+            <h2>Credit Card Information</h2>
+            <div class="form-group">
+                <label for="name">Name on Card:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount ($):</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="card-type">Card Type:</label>
+                <select id="card-type" name="card_type">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card_number" required>
+            </div>
+            <div class="form-group">
+                <label for="validity">Valid Until:</label>
+                <input type="month" id="validity" name="validity" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-section footer-left">
+            <h4>References</h4>
+            <ul class="links">
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML MDN Docs</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS MDN Docs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section footer-middle">
+            <h4>Standards</h4>
+            <ul class="links">
+                <li><a href="https://www.w3.org/TR/html52/">W3C HTML Standard</a></li>
+                <li><a href="https://www.w3.org/Style/CSS/">W3C CSS Standard</a></li>
+            </ul>
+        </div>
+        <div class="footer-section footer-right">
+            <h4>Validators</h4>
+            <ul class="links">
+                <li><a href="https://validator.w3.org/">HTML Validator</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validator. The </a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

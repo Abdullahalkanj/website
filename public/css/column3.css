@@ -1,0 +1,182 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e2f2a;
+}
+/* Header */
+.site-header {
+    background-image: url("../img/wp3873604.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: 390px;
+}
+.site-header .content {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+.site-header .content h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #efff16;
+    font-style: italic;
+}
+/* Main content and typography */
+.site-header .content .slogan {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.site-header .content h2 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+/* Navigation */
+.navigation-bar {
+    background-color: #043105;
+    justify-content: center;
+    padding: 10px 0;
+}
+.navigation-bar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+.navigation-bar .nav-links li {
+    margin: 0 20px;
+}
+.navigation-bar .nav-links li a {
+    color: #f1e9e9;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+.navigation-bar .nav-links li a:hover {
+    color: #ffe81f;
+}
+/* Three Column Layout */
+.column-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.column-container .left-column {
+    flex: 1;
+    background-color: #eef2ff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    order: 1;
+}
+.column-container .main-column {
+    flex: 3;
+    background-color: #fffbea;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    border: 1px solid #ffd700;
+    order: 2;
+}
+.column-container .main-column .trophy-image {
+    float: left;
+    width: 30%;
+    margin-right: 15px;
+}
+.column-container .side-column {
+    flex: 1;
+    background-color: #eef2ff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 10px;
+    order: 3;
+}
+/* Typography within columns */
+.column-container .left-column h2 {
+    color: #333;
+    font-size: 20px;
+}
+.column-container .main-column h1 {
+    font-size: 24px;
+}
+.column-container .side-column h2 {
+    color: #333;
+    font-size: 20px;
+}
+.column-container p {
+    margin-bottom: 20px;
+}
+/* Footer */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #043105;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.site-footer .footer-section {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #444;
+}
+.site-footer .footer-section h4 {
+    margin: 0 0 10px;
+}
+.site-footer .footer-section .links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.site-footer .footer-section .links li {
+    padding: 5px 0;
+}
+.site-footer .footer-section .links li a {
+    color: #f1e9e9;
+    text-decoration: none;
+}
+.site-footer .footer-section .links li a:hover {
+    text-decoration: underline;
+}
+/* media */
+@media (max-width: 768px) {
+    .column-container {
+        flex-direction: column;
+    }
+    .column-container .left-column,
+    .column-container .main-column,
+    .column-container .side-column {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        order: 0;
+    }
+
+    .navigation-bar .nav-links {
+        flex-direction: column;
+    }
+    .navigation-bar .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .site-footer {
+        flex-direction: column;
+    }
+    .site-footer .footer-section {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid #444;
+        margin-top: 10px;
+    }
+}

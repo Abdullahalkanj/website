@@ -1,0 +1,155 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2e2f2a;
+}
+/* Header */
+.site-header {
+    background-image: url("../img/wp3873604.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: 390px;
+}
+.site-header .content {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+.site-header .content h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #efff16;
+    font-style: italic;
+}
+/* Main content and typography */
+.site-header .content .slogan {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.site-header .content h2 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+/* Navigation */
+.navigation-bar {
+    background-color: #043105;
+    justify-content: center;
+    padding: 10px 0;
+}
+.navigation-bar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+.navigation-bar .nav-links li {
+    margin: 0 20px;
+}
+.navigation-bar .nav-links li a {
+    color: #f1e9e9;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+.navigation-bar .nav-links li a:hover {
+    color: #ffe81f;
+}
+/* Main Content Area */
+.about-page {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.about-page .main-content, .sidebar {
+    background-color: #043105;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.about-page .main-content {
+    color: #fff;
+    flex: 3;
+    margin-right: 20px;
+}
+.about-page .sidebar {
+    color: #ffffff;
+    flex: 1;
+}
+.about-page .sidebar .courselinks li a {
+    color: #ffffff;
+}
+/*footer*/
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #043105;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.site-footer .footer-section {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #444;
+}
+.site-footer .footer-section h4 {
+    margin: 0 0 10px;
+}
+.site-footer .footer-section .links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.site-footer .footer-section .links li {
+    padding: 5px 0;
+}
+.site-footer .footer-section .links li a {
+    color: #f1e9e9;
+    text-decoration: none;
+}
+.site-footer .footer-section .links li a:hover {
+    text-decoration: underline;
+}
+/* media */
+@media (max-width: 768px) {
+    .about-page {
+        flex-direction: column;
+    }
+    .about-page .main-content,
+    .about-page .sidebar {
+        width: 100%;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    .navigation-bar .nav-links {
+        flex-direction: column;
+    }
+    .navigation-bar .nav-links li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-footer .footer-section {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px 0;
+    }
+
+    .site-footer .footer-section .links li {
+        padding: 10px 0;
+    }
+}

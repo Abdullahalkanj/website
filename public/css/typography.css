@@ -1,0 +1,182 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfa;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+/* Special Text Enhancements */
+strong, b { font-weight: bold; }
+em, i { font-style: italic; }
+mark { background-color: yellow; padding: 0 0.2em; }
+small { font-size: 0.8em; }
+sup, sub { font-size: 0.75em; }
+code { background-color: #f4f4f4; padding: 2px 4px; font-family: monospace; }
+kbd { background-color: #efefef; padding: 2px 4px; border: 1px solid #ddd; font-family: monospace; }
+samp { font-family: monospace; }
+/* Links */
+a { color: rgb(12, 117, 223); text-decoration: none; }
+a:hover { text-decoration: underline; }
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #998888;
+    padding: 8px;
+    text-align: left;
+}
+thead {
+    background-color: #f2b6b6;
+}
+/* Blockquote Style */
+blockquote {
+    border-left: 4px solid #ccc;
+    padding-left: 16px;
+    font-style: italic;
+    margin: 20px 0;
+}
+/* Responsive Typography Adjustments */
+@media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4, h5, h6 { font-size: 1.25rem; }
+}
+/* Headers - Distinct font family */
+.site-header {
+    background-image: url("../img/wp3873604.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    height: 390px;
+}
+.site-header .content {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+}
+.site-header .content h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #efff16;
+    font-style: italic;
+}
+/* Main content and typography */
+.site-header .content .slogan {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.site-header .content h2 {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+/* Navigation */
+.navigation-bar {
+    background-color: #043105;
+    justify-content: center;
+    padding: 10px 0;
+}
+.navigation-bar .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+}
+.navigation-bar .nav-links li {
+    margin: 0 20px;
+}
+.navigation-bar .nav-links li a {
+    color: #f1e9e9;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+.navigation-bar .nav-links li a:hover {
+    color: #ffe81f;
+}
+/* Footer */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #043105;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+.site-footer .footer-section {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    border-top: 1px solid #444;
+}
+.site-footer .footer-section h4 {
+    margin: 0 0 10px;
+}
+.site-footer .footer-section .links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.site-footer .footer-section .links li {
+    padding: 5px 0;
+}
+.site-footer .footer-section .links li a {
+    color: #f1e9e9;
+    text-decoration: none;
+}
+.site-footer .footer-section .links li a:hover {
+    text-decoration: underline;
+}
+/* media*/
+@media (max-width: 768px) {
+    .column-container, .left-column, .main-column, .side-column {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        float: none;
+    }
+
+    .site-footer {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .site-footer .footer-section {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    .navigation-bar .nav-links {
+        flex-direction: column;
+    }
+
+    .navigation-bar .nav-links li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
